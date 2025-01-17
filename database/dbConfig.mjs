@@ -6,7 +6,7 @@ const conexao = new Sequelize({
   password: '7EUQWzVuKvsXwW1KBjiZOfcRsYoevFoQ',
   dialect: 'postgres',
 host: 'dpg-cu52o83tq21c73dvv0hg-a',
-port: '5432'
+port: '5432',
 });
 
 export default conexao;
