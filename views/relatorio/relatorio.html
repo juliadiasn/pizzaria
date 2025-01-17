@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relatórios</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-menu">
+        <img src="../imagens/logo-churros.png" alt="Logotipo da Churros Delícia" class="logo" />
+        <nav>
+          <ul class="menu">
+            <li><a href="../produtos/produtos.html">Produtos</a></li>
+            <li><a href="../funcionario/funcionario.html">Funcionários</a></li>
+            <li><a href="../clientes/clientes.html">Clientes</a></li>
+            <li><a href="../fornecedores/fornecedores.html">Fornecedores</a></li>
+            <li><a href="../venda/venda.html">Vendas</a></li>
+            <li><a href="../relatorio/relatorio.html">Relatório</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <canvas id="graficoRelatorio" width="400" height="200"></canvas>
+      <section id="relatorios" class="section">
+        <table id="relatorio">
+          <thead>
+            <tr>
+              <th>Mês</th>
+              <th>Lucro Bruto</th>
+              <th>Custo Matéria-Prima</th>
+              <th>Custo Manutenção</th>
+              <th>Folha de Pagamento</th>
+              <th>Lucro Líquido</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        
+      </section>
+
+      <!-- Seção de Funcionários -->
+      <section id="funcionarios" class="section">
+        <h2>Lista de Funcionários</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Nome</th>
+              <th>CPF</th>
+              <th>Salário</th>
+            </tr>
+          </thead>
+          <tbody id="tbFuncionarios"></tbody>
+        </table>
+      </section>
+
+
+    </main>
+
+    <!-- Referência ao arquivo JavaScript externo -->
+    <script type="module" src="relatorioManipulaInterface.mjs"></script>
+  </body>
+</html>

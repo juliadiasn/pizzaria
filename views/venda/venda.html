@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vendas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-menu">
+        <img src="../imagens/logo-churros.png" alt="Logotipo da Churros Delícia" class="logo" />
+        <nav>
+          <ul class="menu">
+            <li><a href="../produtos/produtos.html">Produtos</a></li>
+            <li><a href="../funcionario/funcionario.html">Funcionários</a></li>
+            <li><a href="../clientes/clientes.html">Clientes</a></li>
+            <li><a href="../fornecedores/fornecedores.html">Fornecedores</a></li>
+            <li><a href="../venda/venda.html">Vendas</a></li>
+            <li><a href="../relatorio/relatorio.html">Relatório</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Cadastro de Vendas</h1>
+      <form id="formulario-venda">
+        <label for="id">Código da Venda</label>
+        <input type="number" id="id" name="id" disabled />
+
+        <label for="produtoId">ID do Produto:</label>
+        <input type="number" id="produtoId" name="produtoId" required />
+        <label for="clienteId">ID do Cliente:</label>
+        <input type="number" id="clienteId" name="clienteId" required />
+
+        <label for="quantidade">Quantidade:</label>
+        <input
+          type="number"
+          id="quantidade"
+          name="quantidade"
+          required
+          min="1"
+   
+        />
+        <label for="precoUnitario">Preço Unitário (R$):</label>
+        <input type="number" id="precoUnitario" name="precoUnitario" disabled />
+
+        <label for="total">Total (R$):</label>
+        <input
+          type="number"
+          id="total"
+          name="total"
+          required
+          step="0.01"
+          min="0"
+          disabled
+        />
+
+        <label for="dataVenda">Data da Venda:</label>
+        <input type="date" id="dataVenda" name="dataVenda" required />
+
+        <button type="button" id="btSalvar">Adicionar Venda</button>
+      </form>
+
+      <h2>Lista de Vendas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>ID do Produto</th>
+            <th>ID do Cliente</th>
+            <th>Quantidade</th>
+            <th>Total (R$)</th>
+            <th>Data da Venda</th>
+            <th>Opções</th>
+          </tr>
+        </thead>
+        <tbody id="tbVendas">
+          <!-- Dados inseridos via formulário aparecerão aqui -->
+        </tbody>
+      </table>
+    </div>
+    <script type="module" src="./vendaManipulaInterface.mjs"></script>
+  </body>
+</html>
