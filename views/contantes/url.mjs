@@ -1,3 +1,3 @@
-const urlBase = 'http://localhost:3000';
+const urlBase = 'https://pizzaria-zqn2.onrender.com';
 
 export default urlBase;
