@@ -9,7 +9,7 @@ const tbVenda = conexao.define(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: 'produtos',
+        model: 'produto',
         key: 'id',
       },
     },
