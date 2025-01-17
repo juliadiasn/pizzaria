@@ -1,7 +1,7 @@
 import { Sequelize } from 'sequelize';
 
 const conexao = new Sequelize({
-  database: 'pizzaria',
+  database: 'pizzaria_y85g',
   username: 'root',
   password: '7EUQWzVuKvsXwW1KBjiZOfcRsYoevFoQ',
   dialect: 'postgres',
